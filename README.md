@@ -1,5 +1,9 @@
 # Vaccine Providers
 
+How to run
+``` mvn quarkus: dev```
+
+
 Example postman
 
 ``` POST http://localhost:8080/vaccine-availability-query```
