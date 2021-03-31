@@ -4,6 +4,15 @@ How to run
 ``` mvn quarkus: dev```
 
 
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{"inputObject":{"state":"AZ","fruit":"Apple"},"outputObject":{}}' http://localhost:8080/vaccine-availability-query
+
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{"inputObject":{"state":"AZ","fruit":"Banana"},"outputObject":{}}' http://localhost:8080/vaccine-availability-query
+
+curl -X POST -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{"inputObject":{"state":"AZ","fruit":"XXX"},"outputObject":{}}' http://localhost:8080/vaccine-availability-query
+
+[{"vendor":"BioN","count":20,"rule":"VaccineAvailability Rule 15"},{"vendor":"BioN","count":10,"rule":"VaccineAvailability Rule 16"},{"vendor":"BioN","count":25,"rule":"VaccineAvailability Rule 17"},{"vendor":"PFZ","count":10,"rule":"VaccineAvailability Rule 18"},{"vendor":"PFZ","count":20,"rule":"VaccineAvailability Rule 19"},{"vendor":"PFZ","count":25,"rule":"VaccineAvailability Rule 20"},{"vendor":"BioN","count":20,"rule":"VaccineAvailability Rule 21"}]
+
+
 Example postman
 
 ``` POST http://localhost:8080/vaccine-availability-query```
