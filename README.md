@@ -71,3 +71,5 @@ If the question was `AZ` and `Pineapple`, it would be fine to return `18-22`, si
 `tkobayas-flag-based` has his suggested implementation.
 
 Another option is to have an extra column with a notion of priority, and pick the highest one. I'll submit an example as a branch. The downside of the second approach is that it requires post processing. If one is interested in  leveraging the REST apis, that's likely a deal breaker. In my case, we are using AWS Lambda interface, so it is an equally acceptable solution.
+
+Relevant zulip-chat thread: https://kie.zulipchat.com/#narrow/stream/232677-drools/topic/Match.20on.20the.20most.20strictest.20rules.20and.20not.20more.20general.20ones
